@@ -14,18 +14,47 @@
   </head>
   <body>
     <main class="flex justify-center">
+        <!-- phone mockup section -->
       <div class="mockup-phone">
         <div class="mockup-phone-camera"></div>
         <div class="mockup-phone-display text-white grid place-content-center">
-             <div class="card-body">
+            <!-- stat section -->
+          <div class="stats shadow bg-base-100 mb-5">
+            <div class="stat text-center">
+              <div class="stat-title text-2xl font-bold">Available 
+                Balance
+              </div>
+              <div class="stat-value text-black">9400</div>
+            </div>
+          </div>
+          <!--add money card section  -->
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mb-5">
+            <div class="card-body">
               <fieldset class="fieldset">
-                <label class="label">Mobile</label>
-                <input id="input-mobile-add-money" type="text" class="input text-black" placeholder="Enter Mobile Number" />
-                <label class="label">Pin</label>
-                <input id="input-pin-add-money" type="password" class="input text-black" placeholder="Enter Pin Number" />
-                <button id="btn-login" class="btn btn-info mt-4">Login</button>
+                <label class="label text-black">Amount</label>
+                <input
+                  id="input-mobile-add-money"
+                  type="text"
+                  class="input text-black"
+                  placeholder="Add Money Amount"
+                />
+                <label class="label text-black">Pin</label>
+                <input
+                  id="input-pin-add-money"
+                  type="password"
+                  class="input text-black"
+                  placeholder="Add Money Pin"
+                />
               </fieldset>
             </div>
+          </div>
+
+          <!-- action button -->
+          <div class="flex justify-center gap-10 mb-5">
+            <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+            <button id="btn-cash-out" class="btn btn-secondary">Cash Out</button>
+            <button id="btn-transaction" class="btn btn-info">Transaction</button>
+          </div>
         </div>
       </div>
     </main>
