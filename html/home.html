@@ -14,26 +14,41 @@
   </head>
   <body>
     <main class="flex justify-center">
-        <!-- phone mockup section -->
+      <!-- phone mockup section -->
       <div class="mockup-phone">
         <div class="mockup-phone-camera"></div>
         <div class="mockup-phone-display text-white grid place-content-center">
-            <!-- stat section -->
+          <!-- stat section -->
           <div class="stats shadow bg-base-100 mb-5">
             <div class="stat text-center">
-              <div class="stat-title text-2xl font-bold">Available 
-                Balance
-              </div>
-              <div class="stat-value text-black">9400</div>
+              <div class="stat-title text-2xl font-bold">Account Balance</div>
+              <div id="account-balance" class="stat-value text-black">9400</div>
             </div>
           </div>
+
+           <!-- action button -->
+          <div class="flex justify-between gap-5 mb-5">
+            <button id="btn-add-money-section" class="btn btn-primary">
+              Add Money
+            </button>
+            <button id="btn-cash-out-section" class="btn btn-secondary">
+              Cash Out
+            </button>
+            <button id="btn-transaction-section" class="btn btn-info">
+              Transaction
+            </button>
+          </div>
+          
+
           <!--add money card section  -->
-          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mb-5">
+          <div
+            class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mb-5"
+          >
             <div class="card-body">
               <fieldset class="fieldset">
                 <label class="label text-black">Amount</label>
                 <input
-                  id="input-mobile-add-money"
+                  id="input-amount-add-money"
                   type="text"
                   class="input text-black"
                   placeholder="Add Money Amount"
@@ -45,18 +60,16 @@
                   class="input text-black"
                   placeholder="Add Money Pin"
                 />
+                <button id="btn-add-money" class="btn btn-primary mt-5">Add Money</button>
               </fieldset>
             </div>
           </div>
 
-          <!-- action button -->
-          <div class="flex justify-center gap-10 mb-5">
-            <button id="btn-add-money" class="btn btn-primary">Add Money</button>
-            <button id="btn-cash-out" class="btn btn-secondary">Cash Out</button>
-            <button id="btn-transaction" class="btn btn-info">Transaction</button>
-          </div>
+         
         </div>
       </div>
     </main>
+    <script src="../js/utilities.js"></script>
+    <script src="../js/addMoney.js"></script>
   </body>
 </html>
