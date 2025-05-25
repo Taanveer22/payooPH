@@ -26,7 +26,7 @@
             </div>
           </div>
 
-           <!-- action button -->
+          <!-- action button -->
           <div class="flex justify-between gap-5 mb-5">
             <button id="btn-add-money-section" class="btn btn-primary">
               Add Money
@@ -38,7 +38,6 @@
               Transaction
             </button>
           </div>
-          
 
           <!--add money card section  -->
           <div
@@ -60,16 +59,44 @@
                   class="input text-black"
                   placeholder="Add Money Pin"
                 />
-                <button id="btn-add-money" class="btn btn-primary mt-5">Add Money</button>
+                <button id="btn-add-money" class="btn btn-primary mt-5">
+                  Add Money
+                </button>
               </fieldset>
             </div>
           </div>
 
-         
+          <!--add money card section  -->
+          <div
+            class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mb-5"
+          >
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="label text-black">Amount</label>
+                <input
+                  id="input-amount-cash-out"
+                  type="text"
+                  class="input text-black"
+                  placeholder="Cash Out Amount"
+                />
+                <label class="label text-black">Pin</label>
+                <input
+                  id="input-pin-cash-out"
+                  type="password"
+                  class="input text-black"
+                  placeholder="Cash Out Pin"
+                />
+                <button id="btn-cash-out" class="btn btn-secondary mt-5">
+                  Cash Out
+                </button>
+              </fieldset>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <script src="../js/utilities.js"></script>
     <script src="../js/addMoney.js"></script>
+    <script src="../js/cashOut.js"></script>
   </body>
 </html>
