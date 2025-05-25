@@ -21,6 +21,12 @@ document
       const updateBalance = accountBalance + addMoneyAmount;
       console.log(updateBalance);
       document.getElementById("account-balance").innerText = updateBalance;
+
+      //   show in the transactions history
+      const p = document.createElement("p");
+      p.classList.add("bg-primary", "my-5");
+      p.innerText = `update balance : ${updateBalance} & account balance : ${accountBalance}`;
+      document.getElementById("history-container").appendChild(p);
     } else {
       console.log("wrong input ... please try again later");
     }

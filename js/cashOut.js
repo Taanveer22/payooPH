@@ -23,6 +23,12 @@ document
       console.log(updateBalance);
 
       document.getElementById("account-balance").innerText = updateBalance;
+
+      //   added to transactions history
+      const p = document.createElement("p");
+      p.classList.add("bg-secondary", "my-5");
+      p.innerText = `account balance : ${accountBalance} & update balance : ${updateBalance}`;
+      document.getElementById("history-container").appendChild(p);
     } else {
       console.log("wrong input ... please try again later");
     }

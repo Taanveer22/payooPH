@@ -16,7 +16,7 @@
     <main class="flex justify-center">
       <!-- phone mockup section -->
       <div class="mockup-phone">
-        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-camera bg-slate-100"></div>
         <div class="mockup-phone-display text-white grid place-content-center">
           <!-- stat section -->
           <div class="stats shadow bg-base-100 mb-5">
@@ -28,19 +28,20 @@
 
           <!-- action button -->
           <div class="flex justify-between gap-5 mb-5">
-            <button id="btn-add-money-section" class="btn btn-primary">
+            <button id="btn-show-add-money-section" class="btn btn-primary">
               Add Money
             </button>
-            <button id="btn-cash-out-section" class="btn btn-secondary">
+            <button id="btn-show-cash-out-section" class="btn btn-secondary">
               Cash Out
             </button>
-            <button id="btn-transaction-section" class="btn btn-info">
+            <button id="btn-show-transactions-section" class="btn btn-success">
               Transaction
             </button>
           </div>
 
-          <!--add money card section  -->
+          <!--add money form section  -->
           <div
+            id="form-add-money"
             class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mb-5"
           >
             <div class="card-body">
@@ -66,9 +67,10 @@
             </div>
           </div>
 
-          <!--add money card section  -->
+          <!--cash out form section  -->
           <div
-            class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mb-5"
+            id="form-cash-out"
+            class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mb-5"
           >
             <div class="card-body">
               <fieldset class="fieldset">
@@ -92,11 +94,23 @@
               </fieldset>
             </div>
           </div>
+
+          <!-- transactions histroy section -->
+          <div id="transactions-history" class="hidden">
+            <h2 class="text-center text-green-500 text-2xl font-bold">
+              Transactions
+            </h2>
+
+            <div id="history-container">
+
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <script src="../js/utilities.js"></script>
     <script src="../js/addMoney.js"></script>
     <script src="../js/cashOut.js"></script>
+    <script src="../js/feature.js"></script>
   </body>
 </html>
