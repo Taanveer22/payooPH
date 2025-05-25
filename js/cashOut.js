@@ -14,10 +14,21 @@ document
     const cashOutPin = getInputFieldValueById("input-pin-cash-out");
     console.log(cashOutPin);
 
+    // form validation 01
+    if (isNaN(cashOutAmount) === true) {
+      alert("failed to cash out...");
+      return;
+    }
+
     if (cashOutPin === 1234) {
       console.log("congrats ! you have cashed out ");
       const accountBalance = getTextFieldValueById("account-balance");
       console.log(accountBalance);
+      //   form validation 02
+      if (cashOutAmount > accountBalance) {
+        alert("you don't have insufficient balance in your account");
+        return;
+      }
 
       const updateBalance = accountBalance - cashOutAmount;
       console.log(updateBalance);

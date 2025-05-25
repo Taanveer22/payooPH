@@ -14,6 +14,12 @@ document
     const addMoneyPin = getInputFieldValueById("input-pin-add-money");
     console.log(addMoneyPin);
 
+    // form validation
+    if (isNaN(addMoneyAmount) === true) {
+      alert("failed to add money...");
+      return;
+    }
+
     if (addMoneyPin === 1234) {
       console.log("congrats! you have added money");
       const accountBalance = getTextFieldValueById("account-balance");
